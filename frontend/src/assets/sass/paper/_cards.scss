@@ -1,0 +1,269 @@
+@import "themes";
+
+.card {
+  border-radius: $border-radius-extreme;
+  box-shadow: 0em 0.125em 0.125em rgba(204, 197, 185, 0.5);
+  margin-bottom: 1.25em;
+  position: relative;
+  z-index: 1;
+  border: none;
+  @include themed() {
+    background-color: t('cardBackgroundColor');
+    color: t('cardTextColor');
+  }
+
+  .card-image {
+    width: 100%;
+    overflow: hidden;
+    height: 17.625em;
+    border-radius: $border-radius-extreme $border-radius-extreme 0 0;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    img {
+      width: 100%;
+    }
+  }
+  .card-body {
+    padding: 0.9375em 0.9375em 0.625em 0.9375em;
+  }
+  .card-header {
+    padding: 1.25em 1.25em 0em;
+    border-bottom: 0em;
+    background-color: transparent;
+  }
+  .description {
+    font-size: $font-paragraph;
+    @include themed() {
+      color: t('cardTextColor');
+    }
+  }
+
+  h6 {
+    font-size: $font-size-small;
+    margin: 0;
+  }
+  .card-category,
+  label {
+    font-size: $font-size-base;
+    font-weight: $font-weight-normal;
+    margin-bottom: 0em;
+    i {
+      font-size: $font-paragraph;
+    }
+    @include themed() {
+      color: t('cardLabelColor');
+    }
+  }
+
+  label {
+    font-size: 0.9375rem;
+    margin-bottom: 0.3125em;
+  }
+
+  .card-title {
+    margin: $none;
+    font-weight: $font-weight-light;
+    @include themed() {
+      color: t('cardTitleColor');
+    }
+  }
+  .avatar {
+    width: 3.125em;
+    height: 3.125em;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 0.3125em;
+  }
+  .footer {
+    padding: 0;
+    line-height: 1.875em;
+    overflow: hidden;
+
+    .legend {
+      padding: 0.3125em 0em;
+    }
+
+    hr {
+      margin-top: 0.3125em;
+      margin-bottom: 0.3125em;
+    }
+  }
+  .stats {
+    color: #a9a9a9;
+    flex-wrap: nowrap;
+    font-weight: 300;
+    i {
+      margin-right: 0.125em;
+      min-width: 0.9375em;
+      display: inline-block;
+    }
+  }
+  .footer div {
+    display: inline-block;
+  }
+
+  .author {
+    font-size: $font-size-small;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+  }
+  .author i {
+    font-size: $font-size-base;
+  }
+
+  &.card-separator:after {
+    height: 100%;
+    right: -0.9375em;
+    top: 0em;
+    width: 0.0625em;
+    background-color: $medium-gray;
+    content: "";
+    position: absolute;
+  }
+
+  .ct-chart {
+    margin: 1.875em 0em 1.875em;
+    height: 15.3125em;
+  }
+
+  .table {
+		tbody td:first-child,
+		tfoot th:first-child, tfoot td:first-child,
+		thead th:first-child, thead td:first-child, {
+			padding-left: 0.9375em;
+		}
+
+		tbody td:last-child,
+		tfoot th:last-child, tfoot td:last-child,
+		thead th:last-child, thead td:last-child, {
+			padding-right: 0.9375em;
+		}
+	}
+
+  .alert {
+    border-radius: $border-radius-base;
+    position: relative;
+
+    &.alert-with-icon {
+      padding-left: 4.0625em;
+    }
+  }
+  .icon-big {
+    font-size: 2.7rem;
+    margin-left: 0.625rem;
+  }
+  .numbers {
+    font-size: 1.5rem;
+    text-align: right;
+    p {
+      font-size: 0.875rem;
+      margin: 0;
+    }
+  }
+  ul.team-members {
+    li {
+      padding: 0.625em 0em;
+      &:not(:last-child) {
+        border-bottom: 0.0625em solid $medium-pale-bg;
+      }
+    }
+  }
+}
+
+.card-user {
+  .image {
+    border-radius: 0.5em 0.5em 0em 0em;
+    height: 9.375em;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+  .image-plain {
+    height: 0;
+    margin-top: 6.875em;
+  }
+  .author {
+    text-align: center;
+    text-transform: none;
+    margin-top: -4.0625em;
+    .title {
+      color: $default-states-color;
+      small {
+        color: $muted-color;
+      }
+    }
+  }
+  .avatar {
+    width: 8.25em;
+    height: 8.25em;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 0.9375em;
+
+    &.border-white {
+      border: 0.3125em solid $white-color;
+    }
+    &.border-gray {
+      border: 0.3125em solid $muted-color;
+    }
+  }
+  .card-title {
+    font-weight: 600;
+    line-height: 1.5em;
+  }
+  .description {
+    margin-top: 0.625em;
+  }
+  .card-body {
+    min-height: 12.5em;
+  }
+
+  &.card-plain {
+    .avatar {
+      height: 11.875em;
+      width: 11.875em;
+    }
+  }
+}
+
+.card-map {
+  .map {
+    height: 31.25em;
+    padding-top: 1.25em;
+
+    > div {
+      height: 100%;
+    }
+  }
+}
+
+.card-user,
+.card-price {
+  .card-footer {
+    padding: 0.3125em 0.9375em 0.625em;
+  }
+  hr {
+    margin: 0.3125em 0.9375em;
+  }
+}
+
+.card-plain {
+  background-color: transparent;
+  box-shadow: none;
+  border-radius: 0;
+
+  .image {
+    border-radius: 0.25em;
+  }
+}
+
+.theme--dark .card {
+  webkit-box-shadow: none;
+  box-shadow: none;
+}

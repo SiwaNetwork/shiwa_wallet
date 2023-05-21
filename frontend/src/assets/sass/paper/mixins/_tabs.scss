@@ -1,0 +1,4 @@
+@mixin pill-style($color) {
+  border: 0.0625em solid $color;
+  color: $color;
+}

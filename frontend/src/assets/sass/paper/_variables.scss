@@ -1,0 +1,268 @@
+$font-color: #555E65 !default;
+$fill-font-color: rgba(255, 255, 255, 0.7);
+
+$none: 0 !default;
+$border-thin: 0.0625em !default;
+$border-thick: 0.125em !default;
+
+$white-color: #FFFFFF !default;
+$white-bg: #FFFFFF !default;
+
+$smoke-bg: #F5F5F5 !default;
+$pale-bg: #fcfcfc !default;
+$medium-pale-bg: #F1EAE0 !default;
+
+$table-line-color: #CCC5B9 !default;
+$muted-color: #a49e93 !default;
+
+$black-bg: #121212 !default;
+
+$black-color: #212528 !default;
+$black-hr: #444444 !default;
+
+// remove from the navbar, re-use other variables
+$white-background-color: #FFFFFF !default;
+$black-background-color: $black-bg !default;
+$darkblue-background-color: #35495E !default; // this is the dark blue color from Vue.js branding
+
+$light-gray: #E3E3E3 !default;
+$medium-gray: #DDDDDD !default;
+$dark-gray: #9A9A9A !default;
+
+$gray-input-bg: #F2F2F2 !default;
+$danger-input-bg: #FFC0A4 !default;
+$success-input-bg: #ABF3CB !default;
+$other-medium-gray: #A49E93 !default;
+$transparent-bg: transparent !default;
+
+$default-color: #66615B !default;
+$default-bg: #66615B !default;
+$default-states-color: #403D39 !default;
+
+$primary-color: #0F41BA !default;
+$primary-bg: #0F41BA !default;
+$primary-states-color: #2654c0 !default;
+$primary-color-dark: #0d3aa7 !default;
+$primary-bg-dark: #0d3aa7 !default;
+$primary-states-color-dark: #3b65c6 !default;
+
+$secondary-color: #6625AC !default;
+$secondary-bg: #6625AC !default;
+$secondary-states-color: #753ab4 !default;
+$secondary-color-dark: #5b219a !default;
+$secondary-bg-dark: #5b219a !default;
+$secondary-states-color-dark: #6b37a4 !default;
+
+$success-color: #6DECBB !default;   // this is the green color from Vue.js branding
+$success-bg: #6DECBB !default;
+$success-states-color: #7bedc1 !default;
+$success-color-dark: #62d4a8 !default; 
+$success-bg-dark: #62d4a8 !default;
+$success-states-color-dark: #6ed5ad !default;
+
+$info-color: #5fd1fa !default;
+$info-bg: #68B3C8 !default;
+$info-states-color: #3091B2 !default;
+$info-color-dark: #55bce1!default;
+$info-bg-dark: #68b3c8 !default;
+$info-states-color-dark: #2b82a0 !default;
+
+$warning-color: #e2ea6e !default;
+$warning-bg: #F3BB45 !default;
+$warning-states-color: #BB992F !default;
+
+$danger-color: #ea896e !default;
+$danger-bg: #EB5E28 !default;
+$danger-states-color: #B33C12 !default;
+
+$link-disabled-color: #666666 !default;
+
+/*      light colors - used for select dropdown         */
+
+$light-blue: rgba($primary-color, .2);
+$light-azure: rgba($info-color, .2);
+$light-green: rgba($success-color, .2);
+$light-orange: rgba($warning-color, .2);
+$light-red: rgba($danger-color, .2);
+
+//== Components
+//
+$padding-base-vertical: 0.4375em !default;
+$padding-base-horizontal: 1.125em !default;
+
+$padding-round-vertical: 0.5625em !default;
+$padding-round-horizontal: 1.125em !default;
+
+$padding-simple-vertical: 0.625em !default;
+$padding-simple-horizontal: 1.125em !default;
+
+$padding-large-vertical: 0.6875em !default;
+$padding-large-horizontal: 1.875em !default;
+
+$padding-small-vertical: 0.25em !default;
+$padding-small-horizontal: 0.625em !default;
+
+$padding-xs-vertical: 0.125em !default;
+$padding-xs-horizontal: 0.3125em !default;
+
+$padding-label-vertical: 0.125em !default;
+$padding-label-horizontal: 0.75em !default;
+
+// padding for links inside dropdown menu
+$padding-dropdown-vertical: 0.625em !default;
+$padding-dropdown-horizontal: 0.9375em !default;
+
+$margin-large-vertical: 1.875em !default;
+$margin-base-vertical: 0.9375em !default;
+
+// border radius for buttons
+$border-radius-btn-small: 39.125em !default;
+$border-radius-btn-base: 1.25em !default;
+$border-radius-btn-large: 3.125em !default;
+
+// Cristina: am schimbat aici si s-au modificat inputurile
+$margin-bottom: 0 0 0.625em 0 !default;
+$border-radius-small: 0.1875em !default;
+$border-radius-base: 0.25em !default;
+$border-radius-large: 0.375em !default;
+$border-radius-extreme: 0.375em !default;
+
+$border-radius-large-top: $border-radius-large $border-radius-large 0 0 !default;
+$border-radius-large-bottom: 0 0 $border-radius-large $border-radius-large !default;
+
+$btn-round-radius: 1.875em !default;
+
+$height-base: 2.5em !default;
+
+$font-size-base: 0.875em !default;
+$font-size-xs: 0.75em !default;
+$font-size-small: 0.75em !default;
+$font-size-medium: 1em !default;
+$font-size-large: 1.125em !default;
+$font-size-large-navbar: 1.25em !default;
+
+$font-size-h1: 3.2em !default;
+$font-size-h2: 2.6em !default;
+$font-size-h3: 1.825em !default;
+$font-size-h4: 1.5em !default;
+$font-size-h5: 1.25em !default;
+$font-size-h6: 0.9em !default;
+$font-paragraph: 1em !default;
+$font-size-navbar: 1em !default;
+$font-size-small: 0.75em !default;
+
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-semi: 500 !default;
+$font-weight-bold: 600 !default;
+
+$line-height-small: 1.25em !default;
+$line-height-general: 1.4em !default;
+$line-height: 2.25em !default;
+$line-height-lg: 3.375em !default;
+
+$border-radius-top: 0.625em 0.625em 0 0 !default;
+$border-radius-bottom: 0 0 0.625em 0.625em !default;
+
+$dropdown-shadow: 0 0.125em rgba(17, 16, 15, 0.1), 0 0.125em 0.625em rgba(17, 16, 15, 0.1);
+
+$general-transition-time: 300ms !default;
+
+$slow-transition-time: 300ms !default;
+$dropdown-coordinates: 1.8125em -3.125em !default;
+
+$fast-transition-time: 150ms !default;
+$select-coordinates: 50% -2.5em !default;
+
+$transition-linear: linear !default;
+$transition-bezier: cubic-bezier(0.34, 1.61, 0.7, 1) !default;
+$transition-ease: ease 0s;
+
+$navbar-padding-a: 0.625em 0.9375em;
+$navbar-margin-a: 0.9375em 0em;
+
+$padding-social-a: 0.625em 0.3125em;
+
+$navbar-margin-a-btn: 0.9375em 0.1875em;
+$navbar-margin-a-btn-round: 1em 0.1875em;
+
+$navbar-padding-brand: 1.25em 0.9375em;
+$navbar-margin-brand: 0.3125em 0em;
+
+$navbar-margin-brand-icons: 0.75em auto;
+
+$navbar-margin-btn: 0.9375em 0.1875em;
+
+$height-icon: 4em !default;
+$width-icon: 4em !default;
+$padding-icon: 0.75em !default;
+$border-radius-icon: 0.9375em !default;
+
+$white-navbar: rgba(#FFFFFF, .96);
+$blue-navbar: rgba(#34ACDC, .98);
+$azure-navbar: rgba(#5BCAFF, .98);
+$green-navbar: rgba(#4CD964, .98);
+$orange-navbar: rgba(#FF9500, .98);
+$red-navbar: rgba(#FF4C40, .98);
+
+// dropdown & alert; combine with others
+$bg-nude: #f2f2f2 !default;
+$bg-primary: #8ECFD5 !default;
+$bg-info: #0BD4FF !default;
+$bg-success: #00F1B7 !default;
+$bg-warning: #FFE28C !default;
+$bg-danger: #FF8F5E !default;
+
+$topbar-x: topbar-x !default;
+$topbar-back: topbar-back !default;
+$bottombar-x: bottombar-x !default;
+$bottombar-back: bottombar-back !default;
+
+$transition-linear: linear !default;
+$transition-bezier: cubic-bezier(0.34, 1.61, 0.7, 1) !default;
+$transition-ease: ease 0s;
+$transition-ease-in: ease-in !default;
+$transition-ease-out: ease-out !default;
+
+$general-transition-time: 300ms !default;
+
+$slow-transition-time: 370ms !default;
+$dropdown-coordinates: 1.8125em -3.125em !default;
+
+$fast-transition-time: 150ms !default;
+
+$ultra-fast-transition-time: 100ms !default;
+
+$select-coordinates: 50% -2.5em !default;
+
+$padding-zero: 0em !default;
+
+$sidebar-width: calc(100% - 16.25em) !default;
+$medium-dark-gray: #AAAAAA !default;
+
+//variables used for sidebar
+$sidebar-background-dark-blue: #506367;
+
+$sidebar-background-blue: #b8d8d8 !default;
+$sidebar-font-blue: #506568 !default;
+$sidebar-subtitle-blue: #7a9e9f !default;
+
+$sidebar-background-green: #d5e5a3 !default;
+$sidebar-font-green: #60773d !default;
+$sidebar-subtitle-green: #92ac56 !default;
+
+$sidebar-background-yellow: #ffe28c !default;
+$sidebar-font-yellow: #b25825 !default;
+$sidebar-subtitle-yellow: #d88715 !default;
+
+$sidebar-background-brown: #d6c1ab !default;
+$sidebar-font-brown: #75442e !default;
+$sidebar-subtitle-brown: #a47e65 !default;
+
+$sidebar-background-purple: #baa9ba !default;
+$sidebar-font-purple: #3a283d !default;
+$sidebar-subtitle-purple: #5a283d !default;
+
+$sidebar-background-orange: #ff8f5e !default;
+$sidebar-font-orange: #772510 !default;
+$sidebar-subtitle-orange: #e95e37 !default;
