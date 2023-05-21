@@ -121,4 +121,4 @@ wails build -d
 
 ### Лицензия
 
-Shiwa Wallet распространяется под лицензией MIT. Подробную информацию см. в [LICENSE.md](https://github.com/grvlle/
+Shiwa Wallet распространяется под лицензией MIT.
